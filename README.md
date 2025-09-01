@@ -60,13 +60,19 @@ The contact form uses Netlify Forms and includes:
 
 ## 🚀 Deployment
 
-1. **Netlify Deployment**:
+1. **Domain Setup**:
+   - Primary domain: `woodleysolutions.dev`
+   - Register domain and configure DNS to point to Netlify
+
+2. **Netlify Deployment**:
    - Connect GitHub repository to Netlify
    - Build command: `npm run build`
    - Publish directory: `dist`
+   - Add custom domain: `woodleysolutions.dev`
    - Enable Netlify Forms in site settings
+   - Configure SSL certificate (automatic with custom domain)
 
-2. **Environment Setup**:
+3. **Environment Setup**:
    - No environment variables required
    - Forms work automatically with Netlify hosting
 
