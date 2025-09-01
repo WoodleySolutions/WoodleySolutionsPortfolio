@@ -183,11 +183,16 @@
 				box-sizing: border-box;
 			}
 
+			html {
+				overflow-x: hidden;
+			}
+
 			body {
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				font-family: 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 				line-height: 1.6;
 				color: #e2e8f0;
 				background: #0f172a;
+				overflow-x: hidden;
 			}
 
 			.container {
@@ -591,32 +596,63 @@
 				}
 
 				.logo-text-section {
-					display: none;
+					display: flex;
+				}
+
+				.logo-text {
+					font-size: 1.5rem;
+					font-weight: 700;
+				}
+
+				.logo-tagline {
+					font-size: 0.75rem;
+					font-weight: 400;
 				}
 
 				.logo {
-					height: 120px;
+					height: 60px;
+				}
+
+				.header .container {
+					padding: 0.75rem 1rem;
 				}
 
 				.hero {
-					padding: 110px 0 60px;
+					padding: 100px 0 60px;
 				}
 
 				.hero h1 {
-					font-size: 2.5rem;
+					font-size: 2.25rem;
+					line-height: 1.2;
+					margin-bottom: 1.5rem;
+				}
+
+				.hero-subtitle {
+					font-size: 1.1rem;
+					padding: 0 0.5rem;
 				}
 
 				.hero-cta {
 					flex-direction: column;
 					align-items: center;
+					gap: 0.75rem;
+				}
+
+				.btn-primary, .btn-secondary {
+					padding: 0.75rem 1.5rem;
+					font-size: 1rem;
+					width: 200px;
+					text-align: center;
 				}
 
 				.project-grid {
 					grid-template-columns: 1fr;
+					gap: 1.5rem;
 				}
 
 				.services-grid {
 					grid-template-columns: 1fr;
+					gap: 1.5rem;
 				}
 
 				h2 {
@@ -625,6 +661,14 @@
 
 				.container {
 					padding: 0 1rem;
+				}
+
+				.section {
+					padding: 60px 0;
+				}
+
+				.footer-logo {
+					height: 120px;
 				}
 			}
 		</style>
