@@ -5,12 +5,628 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/images/logo-icon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Woodley Solutions - Craftsmanship and Integrity</title>
+		<meta name="description" content="Professional web development and software solutions by Tyler Woodley. Specializing in React, TypeScript, and modern web technologies." />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header class="header">
+			<div class="container">
+				<div class="logo-section">
+					<img src="/images/logo-icon-nobuffer.png" alt="Woodley Solutions" class="logo" />
+					<div class="logo-text-section">
+						<span class="logo-text">Woodley Solutions</span>
+						<span class="logo-tagline">Craftsmanship and Integrity</span>
+					</div>
+				</div>
+				<nav class="nav">
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#services">Services</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h1>Craftsmanship and Integrity</h1>
+					<p class="hero-subtitle">Professional web development and software solutions that combine technical excellence with principled business practices.</p>
+					<div class="hero-cta">
+						<a href="#contact" class="btn-primary">Get In Touch</a>
+						<a href="#projects" class="btn-secondary">View Projects</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="about">
+				<div class="container">
+					<h2>About Woodley Solutions</h2>
+					<p>I'm Tyler Woodley, a passionate software developer based in the Iowa City-Cedar Rapids area, committed to delivering high-quality web applications and digital solutions. With expertise in modern web technologies including React, TypeScript, and full-stack development, I help businesses build robust, scalable digital experiences.</p>
+					<p>My approach combines technical excellence with principled business practices, ensuring every project reflects both craftsmanship and integrity. From interactive web applications to comprehensive digital platforms, I work closely with clients to transform their vision into reality.</p>
+				</div>
+			</section>
+
+			<section id="projects" class="projects">
+				<div class="container">
+					<h2>Featured Projects</h2>
+					<div class="project-grid">
+						<div class="project-card">
+							<h3>The Great Catholic Book Club</h3>
+							<p>A comprehensive platform for Catholic book discussions and community engagement, featuring interactive discussions, video content, and member resources.</p>
+							<div class="project-links">
+								<a href="https://www.greatcatholicbookclub.com" target="_blank" rel="noopener">Visit Site</a>
+								<a href="https://www.youtube.com/@TheGreatCatholicBookClub" target="_blank" rel="noopener">YouTube Channel</a>
+							</div>
+							<div class="tech-stack">
+								<span class="tech-tag">React</span>
+								<span class="tech-tag">TypeScript</span>
+								<span class="tech-tag">Node.js</span>
+							</div>
+						</div>
+
+						<div class="project-card">
+							<h3>Development Portfolio</h3>
+							<p>A collection of public projects showcasing modern web development techniques, from interactive applications to technical experiments and learning projects.</p>
+							<div class="project-links">
+								<a href="https://github.com/WoodleySolutions" target="_blank" rel="noopener">View GitHub</a>
+							</div>
+							<div class="tech-stack">
+								<span class="tech-tag">JavaScript</span>
+								<span class="tech-tag">TypeScript</span>
+								<span class="tech-tag">React</span>
+								<span class="tech-tag">Astro</span>
+							</div>
+						</div>
+
+						<div class="project-card">
+							<h3>54 Day Rosary Novena</h3>
+							<p>A modern web application for tracking and guiding users through the 54-Day Rosary Novena, a traditional Catholic prayer practice. Features interactive prayer tracking, progress monitoring, and responsive design for mobile and desktop use.</p>
+							<div class="project-links">
+								<a href="https://www.54dayrosary.com" target="_blank" rel="noopener">Visit App</a>
+								<a href="https://github.com/WoodleySolutions" target="_blank" rel="noopener">View GitHub</a>
+							</div>
+							<div class="tech-stack">
+								<span class="tech-tag">JavaScript</span>
+								<span class="tech-tag">React</span>
+								<span class="tech-tag">PWA</span>
+								<span class="tech-tag">Mobile-First</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="services">
+				<div class="container">
+					<h2>Services</h2>
+					<div class="services-grid">
+						<div class="service-card">
+							<h3>Web Development</h3>
+							<p>Modern, responsive websites and web applications built with the latest technologies.</p>
+						</div>
+						<div class="service-card">
+							<h3>React Applications</h3>
+							<p>Interactive, scalable React applications with TypeScript and modern tooling.</p>
+						</div>
+						<div class="service-card">
+							<h3>Technical Consulting</h3>
+							<p>Architecture planning, code reviews, and technical guidance for your projects.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact">
+				<div class="container">
+					<h2>Get In Touch</h2>
+					<p>Ready to start your next project? Let's discuss how we can work together to bring your vision to life.</p>
+					
+					<form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you">
+						<input type="hidden" name="form-name" value="contact" />
+						
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<input type="text" id="subject" name="subject" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="5" required></textarea>
+						</div>
+						
+						<button type="submit" class="contact-submit">Send Message</button>
+					</form>
+
+					<div class="contact-links">
+						<a href="https://www.linkedin.com/in/tylerwoodley/" target="_blank" rel="noopener" class="contact-link">
+							<span>LinkedIn Profile</span>
+						</a>
+						<a href="https://github.com/WoodleySolutions" target="_blank" rel="noopener" class="contact-link">
+							<span>GitHub</span>
+						</a>
+						<a href="mailto:tyler.woodleysolutions@gmail.com" class="contact-link">
+							<span>Direct Email</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<img src="/images/logo-full-nobuffer.png" alt="Woodley Solutions" class="footer-logo" />
+				<p>&copy; 2024 Woodley Solutions. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+				line-height: 1.6;
+				color: #e2e8f0;
+				background: #0f172a;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			/* Header */
+			.header {
+				background: rgba(15, 23, 42, 0.95);
+				backdrop-filter: blur(10px);
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 1000;
+				border-bottom: 1px solid rgba(130, 109, 165, 0.2);
+			}
+
+			.header .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 2rem;
+			}
+
+			.logo-section {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+			}
+
+			.logo {
+				height: 80px;
+				width: auto;
+			}
+
+			.logo-text-section {
+				display: flex;
+				flex-direction: column;
+				gap: 0.25rem;
+			}
+
+			.logo-text {
+				font-family: 'Heebo', sans-serif;
+				font-size: 2rem;
+				font-weight: 700;
+				color: #c4b5fd;
+				letter-spacing: -0.025em;
+				line-height: 1;
+			}
+
+			.logo-tagline {
+				font-family: 'Heebo', sans-serif;
+				font-size: 0.875rem;
+				font-weight: 400;
+				color: #a78bfa;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				line-height: 1;
+			}
+
+			.nav {
+				display: flex;
+				gap: 2rem;
+			}
+
+			.nav a {
+				color: #a78bfa;
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s ease;
+			}
+
+			.nav a:hover {
+				color: #c4b5fd;
+			}
+
+			/* Hero */
+			.hero {
+				background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+				color: white;
+				padding: 140px 0 80px;
+				text-align: center;
+			}
+
+			.hero h1 {
+				font-size: 3.5rem;
+				font-weight: 700;
+				margin-bottom: 1rem;
+				text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			}
+
+			.hero-subtitle {
+				font-size: 1.25rem;
+				margin-bottom: 2.5rem;
+				opacity: 0.95;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.hero-cta {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.btn-primary, .btn-secondary {
+				padding: 0.875rem 2rem;
+				border-radius: 8px;
+				text-decoration: none;
+				font-weight: 600;
+				transition: all 0.3s ease;
+				display: inline-block;
+			}
+
+			.btn-primary {
+				background: white;
+				color: #4c1d95;
+			}
+
+			.btn-primary:hover {
+				background: #f1f5f9;
+				transform: translateY(-2px);
+			}
+
+			.btn-secondary {
+				background: transparent;
+				color: white;
+				border: 2px solid rgba(255,255,255,0.3);
+			}
+
+			.btn-secondary:hover {
+				background: rgba(255,255,255,0.1);
+				border-color: rgba(255,255,255,0.6);
+			}
+
+			/* Sections */
+			section {
+				padding: 80px 0;
+			}
+
+			section:nth-child(even) {
+				background: #1e293b;
+			}
+
+			h2 {
+				font-size: 2.5rem;
+				color: #c4b5fd;
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+
+			/* About */
+			.about p {
+				font-size: 1.125rem;
+				max-width: 800px;
+				margin: 0 auto 1.5rem;
+				text-align: center;
+				color: #cbd5e1;
+			}
+
+			.about p:last-child {
+				margin-bottom: 0;
+			}
+
+			/* Projects */
+			.project-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+				gap: 2rem;
+				margin-top: 3rem;
+			}
+
+			.project-card {
+				background: #1e293b;
+				padding: 2rem;
+				border-radius: 12px;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				border: 1px solid rgba(130, 109, 165, 0.2);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+
+			.project-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+				border-color: rgba(130, 109, 165, 0.4);
+			}
+
+			.project-card h3 {
+				color: #c4b5fd;
+				margin-bottom: 1rem;
+				font-size: 1.5rem;
+			}
+
+			.project-card p {
+				color: #cbd5e1;
+				margin-bottom: 1.5rem;
+			}
+
+			.project-links {
+				display: flex;
+				gap: 1rem;
+				margin-bottom: 1.5rem;
+				flex-wrap: wrap;
+			}
+
+			.project-links a {
+				color: #a78bfa;
+				text-decoration: none;
+				font-weight: 500;
+				padding: 0.5rem 1rem;
+				border: 1px solid #a78bfa;
+				border-radius: 6px;
+				transition: all 0.3s ease;
+			}
+
+			.project-links a:hover {
+				background: #a78bfa;
+				color: #0f172a;
+			}
+
+			.tech-stack {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+			}
+
+			.tech-tag {
+				background: linear-gradient(135deg, #a78bfa, #7c3aed);
+				color: white;
+				padding: 0.25rem 0.75rem;
+				border-radius: 20px;
+				font-size: 0.875rem;
+				font-weight: 500;
+			}
+
+			/* Services */
+			.services-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				margin-top: 3rem;
+			}
+
+			.service-card {
+				background: #1e293b;
+				padding: 2rem;
+				border-radius: 12px;
+				text-align: center;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				border: 1px solid rgba(130, 109, 165, 0.2);
+				transition: transform 0.3s ease;
+			}
+
+			.service-card:hover {
+				transform: translateY(-5px);
+				border-color: rgba(130, 109, 165, 0.4);
+			}
+
+			.service-card h3 {
+				color: #c4b5fd;
+				margin-bottom: 1rem;
+				font-size: 1.5rem;
+			}
+
+			.service-card p {
+				color: #cbd5e1;
+			}
+
+			/* Contact */
+			.contact {
+				background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+				color: white;
+				text-align: center;
+			}
+
+			.contact h2 {
+				color: white;
+			}
+
+			.contact p {
+				font-size: 1.125rem;
+				margin-bottom: 2rem;
+				opacity: 0.95;
+			}
+
+			.contact-form {
+				max-width: 600px;
+				margin: 2rem auto;
+				padding: 2rem;
+				background: rgba(255,255,255,0.1);
+				border-radius: 12px;
+				backdrop-filter: blur(10px);
+			}
+
+			.form-group {
+				margin-bottom: 1.5rem;
+			}
+
+			.form-group label {
+				display: block;
+				color: white;
+				font-weight: 600;
+				margin-bottom: 0.5rem;
+				font-size: 1rem;
+			}
+
+			.form-group input,
+			.form-group textarea {
+				width: 100%;
+				padding: 0.75rem;
+				border: 1px solid rgba(255,255,255,0.3);
+				border-radius: 6px;
+				background: rgba(255,255,255,0.1);
+				color: white;
+				font-size: 1rem;
+				transition: all 0.3s ease;
+			}
+
+			.form-group input::placeholder,
+			.form-group textarea::placeholder {
+				color: rgba(255,255,255,0.6);
+			}
+
+			.form-group input:focus,
+			.form-group textarea:focus {
+				outline: none;
+				border-color: rgba(255,255,255,0.6);
+				background: rgba(255,255,255,0.15);
+			}
+
+			.contact-submit {
+				background: white;
+				color: #4c1d95;
+				font-size: 1.125rem;
+				font-weight: 600;
+				padding: 1rem 2rem;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.contact-submit:hover {
+				background: #f1f5f9;
+				transform: translateY(-2px);
+			}
+
+			.contact-links {
+				display: flex;
+				gap: 1.5rem;
+				justify-content: center;
+				margin-top: 3rem;
+				flex-wrap: wrap;
+			}
+
+			.contact-link {
+				color: white;
+				text-decoration: none;
+				padding: 0.75rem 1.5rem;
+				border: 1px solid rgba(255,255,255,0.3);
+				border-radius: 6px;
+				transition: all 0.3s ease;
+				font-weight: 500;
+			}
+
+			.contact-link:hover {
+				background: rgba(255,255,255,0.1);
+				border-color: rgba(255,255,255,0.6);
+				transform: translateY(-2px);
+			}
+
+			/* Footer */
+			.footer {
+				background: #020617;
+				color: #94a3b8;
+				text-align: center;
+				padding: 3rem 0;
+			}
+
+			.footer-logo {
+				height: 180px;
+				width: auto;
+				margin-bottom: 1.5rem;
+				opacity: 0.9;
+			}
+
+			.footer p {
+				opacity: 0.7;
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.nav {
+					display: none;
+				}
+
+				.logo-text-section {
+					display: none;
+				}
+
+				.logo {
+					height: 120px;
+				}
+
+				.hero {
+					padding: 110px 0 60px;
+				}
+
+				.hero h1 {
+					font-size: 2.5rem;
+				}
+
+				.hero-cta {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.project-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.services-grid {
+					grid-template-columns: 1fr;
+				}
+
+				h2 {
+					font-size: 2rem;
+				}
+
+				.container {
+					padding: 0 1rem;
+				}
+			}
+		</style>
 	</body>
 </html>
